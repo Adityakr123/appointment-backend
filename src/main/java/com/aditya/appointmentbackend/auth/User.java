@@ -1,4 +1,4 @@
-package com.aditya.appointmentbackend.user;
+package com.aditya.appointmentbackend.auth;
 
 import jakarta.persistence.*;
 import lombok.*;

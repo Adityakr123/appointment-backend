@@ -1,4 +1,4 @@
-package com.aditya.appointmentbackend.user.dto;
+package com.aditya.appointmentbackend.auth.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;

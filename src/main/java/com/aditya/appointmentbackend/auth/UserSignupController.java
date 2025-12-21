@@ -1,6 +1,6 @@
-package com.aditya.appointmentbackend.user;
+package com.aditya.appointmentbackend.auth;
 
-import com.aditya.appointmentbackend.user.dto.UserSignupRequest;
+import com.aditya.appointmentbackend.auth.dto.UserSignupRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +13,10 @@ public class UserSignupController {
 
     private final UserSignupService signupService;
 
-    @PostMapping("/signup")
-    public ResponseEntity<?> signup(
+    @PostMapping("/signupOtpRequest")
+    public ResponseEntity<?> signupOtpRequest(
             @Valid @RequestBody UserSignupRequest request
     ) {
-        return ResponseEntity.ok(signupService.signup(request));
+        return ResponseEntity.ok(signupService.signupOtpRequest(request));
     }
 }
