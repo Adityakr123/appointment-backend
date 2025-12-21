@@ -1,0 +1,29 @@
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://ep-patient-queen-ah13esfc-pooler.c-3.us-east-1.aws.neon.tech:5432/appointmentdev?sslmode=require&channel_binding=require
+#    username:  neondb_owner
+#    password: npg_p6slQbmwW1KB
+#    driver-class-name: org.postgresql.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#
+#server:
+#  port: 8080
+
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
