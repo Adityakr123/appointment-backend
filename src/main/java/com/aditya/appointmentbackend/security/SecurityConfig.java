@@ -16,7 +16,7 @@ public class SecurityConfig {
                         // Public endpoints
                         .requestMatchers(
                                 "/health",
-                                "/users/signup",
+                                "/users/signupOtpRequest",
                                 "/auth/**",
                                 "/business/request-signup",
                                 "/business/verify-otp"
